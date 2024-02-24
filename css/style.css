@@ -1,0 +1,714 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'poppins', sans-serif;
+    color: var(--colorBlack);
+}
+
+:root{
+    --colorBlack: #0c0c0d;
+    --colorPurple3: #B9A9FB;
+    --colorYellow: #E5F788;
+    --colorPurple1: #895AF7;
+    --colorGreen: #88F7C6;
+    --colorPurple2: #D9C1FF;
+    --colorBlue: #B8F4FF;
+}
+
+body{
+    padding: 0px;
+}
+
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0;
+}
+
+.logo {
+    margin: 0;
+    letter-spacing: -2px;
+    font-size: 24px;
+}
+
+.logo span{
+    font-weight: 900;
+    padding-right: 5px;
+    font-size: 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: center;
+    flex-grow: 1;
+    font-weight: 300;
+}
+
+.nav-menu a {
+    margin: 0 10px; /* Adicione margens aos links da navegação */
+    text-decoration: none;
+    color: var(--colorBlack);
+    font-size: 16px;
+}
+
+.button2,
+.button {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.button {
+    background-color: var(--colorBlack);
+    border-radius: 30px;
+    color: #fff;
+}
+
+.button2{
+    font-weight: 500;
+}
+
+.title {
+    font-size: 35px;
+    font-weight: 900;
+    flex-grow: 1; /* Adiciona flex-grow para ocupar o espaço disponível */
+    line-height: 1.3;
+}
+
+.subtitle {
+    font-size: 18px;
+    max-width: 40%;
+    position: absolute;
+    margin-left: 500px;
+    margin-top: 95px;
+}
+
+.hero-container{
+    display: flex; 
+    position: relative;
+}
+
+.hero{
+    padding-top: 50px;
+    height: 900px;
+}
+
+
+.card-1 {
+    background-color: var(--colorPurple3);
+    position: absolute;
+    top: 350px; /* Ajuste conforme necessário */
+    left: 15px; /* Ajuste conforme necessário */
+    padding: 30px;
+    width: 400px;
+    height: 270px;
+    border-radius: 20px;
+    box-shadow: -80px 90px var(--colorBlack);
+}
+
+.card-2 {
+    position: absolute;
+    top: 300px; /* Ajuste conforme necessário */
+    left: 500px; /* Ajuste conforme necessário */
+    background-color: var(--colorYellow);
+    width: 650px;
+    height: 320px;
+    padding: 25px 30px;
+    border-radius: 20px;
+    box-shadow: 80px 90px var(--colorBlack);
+}
+
+.card-2 h3{
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.card-2 img{
+    width: 370px;
+}
+
+.card-1 strong{
+    font-size: 40px;
+    font-weight: 600;
+}
+
+.card-1 p{
+    padding-top: 5px;
+    font-size: 14px;
+    max-width: 280px;
+}
+
+.arrow-up-right-black{
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    left: 340px;
+}
+
+.img-hero{
+    max-width: 270px;
+   /*max-height: 400px;*/
+}
+
+.img-hero img{
+    max-width: 270px;
+    /*max-height: 400px;*/
+    position: absolute;
+    top: 190px;
+    right: -50px;
+    border-radius: 20px;
+}
+
+.icon-arrow-w {
+    background-color: var(--colorBlack);
+    max-width: 200px;
+    max-height: 60px;
+    position: absolute;
+    top: 150px;
+    left: 210px;
+    border-radius: 50px;
+    padding: 0 60px;
+    display: flex; /* Adiciona display flex para alinhar os itens verticalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+}
+
+.icon-arrow-w img {
+    max-width: 100%; /* Certifica-se de que a imagem não ultrapasse a largura do contêiner */
+    max-height: 100%; /* Certifica-se de que a imagem não ultrapasse a altura do contêiner */
+}
+
+.icon-star{
+    position: absolute;
+    display: flex; /* Adiciona display flex para alinhar os itens verticalmente */
+    align-items: center; /* Alinha os itens verticalmente no centro */
+    max-width: 50px;
+    max-height: 50px;
+    left: 1080px;
+    top: 20px;
+}
+
+.icon-star img{
+    max-width: 100%; /* Certifica-se de que a imagem não ultrapasse a largura do contêiner */
+    max-height: 100%; /* Certifica-se de que a imagem não ultrapasse a altura do contêiner */
+}
+
+
+.faixa {
+    display: flex;
+    justify-content: flex-start; /* Correção aqui */
+    overflow: hidden;
+    background-color: var(--colorPurple1);
+    height: 100px;
+    width: 100%;
+    position: absolute;
+    z-index: 999;
+    top: 780px;
+    left: 0;
+    align-items: center; /* Centraliza verticalmente */
+}
+  
+.faixa h1 {
+    animation: move-rtl 6000ms linear infinite;
+    white-space: nowrap;
+    text-transform: uppercase;
+    font-family: 'Poppins';
+    font-size: 40px;
+    font-weight: 600;
+    color: #fff;
+    padding: 0 20px;
+    }
+  
+@keyframes move-rtl {
+    0% {
+      transform: translateX(0);
+    }
+    100% {
+      transform: translateX(-100%);
+    }
+  }
+
+
+
+
+.container {
+    padding: 0 150px;
+}
+
+
+
+.people {
+    display: flex;
+    align-items: center;
+    border-top: 1px solid #9e91d5;
+    margin-top: 20px;
+    padding: 20px 0;
+}
+
+.person-circle {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    overflow: hidden; /* Garante que a imagem não ultrapasse os limites do círculo */
+    margin-right: -10px;
+    border: 3px solid var(--colorPurple3);
+}
+
+.person-circle img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* Mantém a proporção da imagem dentro do círculo */
+}
+
+.icon-plus{
+    background-color:  var(--colorBlack);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.icon-plus img{
+    width: 20px;
+    height: 20px;
+}
+
+.black-section {
+    background-color: #1F1F1F; /* Configuração da cor preta */
+    color: #fff;
+    box-sizing: border-box;
+    position: relative;
+    height: 900px; 
+}
+
+.black-section .flecha-baixo-branca{
+    width: 40px;
+    height: 70px;
+    position: absolute;
+    left: 1400px;
+    top: 70px;
+    opacity: 0.1;
+}
+
+.black-section .star-branca{
+    max-width: 55px;
+    max-height: 55px;
+    position: absolute;
+    top: 110px;
+}
+
+.content-bs{
+    display: flex;
+}
+
+.content-bs h1 {
+    margin: 0 auto;
+    color: #fff;
+    text-align: center;
+    justify-content: center;
+    max-width: 60%;
+    font-size: 35px;
+    margin-top: 70px;
+    margin-bottom: 50px;
+}
+
+.box-bs{
+    background-color: #191919b2;
+    width: 100%;
+    height: 130px;
+    padding: 30px 50px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between; /* Adiciona espaço entre os elementos */
+    margin-top: 20px;
+}
+
+.text-container {
+    flex-grow: 1; /* Ocupa o espaço disponível restante */
+}
+
+.box-bs p{
+    color: #fff;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.box-bs img{
+    width: 30px;
+    height: 30px;
+}
+
+.part3 {
+    height: 950px;
+}
+
+.box-green{
+    background-color: var(--colorGreen);
+    height: 500px;
+    margin-top: 100px;
+    border-radius: 20px;
+    padding: 40px 40px;
+    overflow: hidden;
+}
+
+.box-green h1{
+    font-size: 40px;
+    font-weight: 600;
+    max-width: 650px;
+}
+
+.icon-man{
+    width: 300px;
+    position: absolute;
+    left: 1140px;
+    top: 2000px;
+    border-radius: 100%;
+    overflow: hidden;
+}
+
+.icon-man img{
+    width: 100%;
+    border-radius: 100%;
+}
+
+.pro-grid{
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    gap: 0 30px;
+    margin-top: 30px;
+    margin-bottom: 100px;
+}
+
+.box-purple{
+    background-color: var(--colorPurple2);
+    height: 350px;
+    border-radius: 20px;
+    padding: 25px 25px;
+}
+
+.box-purple img{
+    width: 740px;
+    height: 270px;
+}
+
+.box-blue{
+    background-color: var(--colorBlue);
+    height: 350px;
+    border-radius: 20px;
+    padding: 25px 25px;
+}
+
+.grid-container{
+    display: grid;
+    grid-template-columns: 210px 210px 210px;
+    margin-top: 30px;
+}
+
+.numbers-users{
+    height: 100px;
+    margin-bottom: 20px;
+}
+
+.numbers-users h1{
+    font-size: 35px;
+    font-weight: 700;
+}
+
+.arrow-nu{
+    max-width: 10px;
+    max-height: 10px;
+    margin-left: 10px;
+}
+.arrow-b{
+    max-width: 10px;
+    max-height: 10px;
+    margin-left: 10px;
+}
+
+.text-well{
+    width: 400px;
+    margin-top: 45px;
+}
+
+.text-well p{
+    font-size: 14px;
+}
+
+.text-well span{
+   font-weight: 600;
+}
+
+.icon-aster{
+    position: absolute;
+    left: 850px;
+    top: 2150px;
+    opacity: 0.06;
+}
+
+.box-blue h1, .box-purple h1 {
+    font-size: 30px;
+    font-weight: 600;
+}
+
+
+.grid-container2 {
+    margin-top: 40px;
+    display: flex;
+    flex-direction: column; /* Disposição em coluna */
+    align-items: flex-start; /* Alinhar à esquerda */
+}
+
+.redes-sociais {
+    width: 100%;
+    display: flex;
+    justify-content: space-between; /* Coloca espaço entre os elementos */
+    align-items: center; /* Alinha os itens verticalmente ao centro */
+    margin-bottom: 15px; /* Adiciona uma margem entre os itens */
+}
+
+.arrow-3 {
+    max-width: 15px;
+    max-height: 15px;
+    margin-left: auto; /* Isso empurra a imagem para a direita, colando-a na borda direita da div */
+}
+
+.redes-sociais p {
+    font-weight: 400;
+    font-size: 25px;
+    margin: 0; /* Remove a margem padrão do parágrafo */
+}
+
+.linha{
+    background-color: var(--colorBlack);
+    height: 2px;
+}
+
+@media only screen and (max-width: 768px) {
+
+    .hero{
+        box-sizing: border-box;
+        position: static;
+        padding-top: 50px;
+        height: 1300px;
+    }
+    
+    .hero-container {
+        position: static;
+        flex-direction: column; /* Altera a direção da flexbox para coluna */
+        align-items: center; /* Centraliza os itens verticalmente */
+    }
+
+    .title {
+        max-width: 100%; /* Garante que o título não ultrapasse a largura da tela */
+        font-size: 25px; /* Tamanho do título ajustado para telas menores */
+        text-align: center; /* Centraliza o texto */
+    }
+
+    .subtitle {
+        max-width: 100%; /* Garante que o subtítulo não ultrapasse a largura da tela */
+        text-align: center; /* Centraliza o texto */
+        margin-top: 20px; /* Adiciona margem superior */
+        position: static;
+        margin-left: 0;
+    }
+
+    .card-1,
+    .card-2 {
+        position: static; /* Remove o posicionamento absoluto para empilhar os cards */
+        width: 100%; /* Garante que os cards ocupem a largura total da tela */
+        margin-top: 70px; /* Adiciona espaçamento entre os cards */
+    }
+
+    .arrow-up-right-black {
+        position: relative; /* Remove a posição absoluta da seta */
+        margin-left: 0; /* Remove a margem à esquerda */
+    }
+
+    .img-hero {
+        display: none; /* Oculta a imagem hero em telas menores */
+    }
+
+    .icon-arrow-w {
+        display: none; /* Oculta o ícone de seta em telas menores */
+    }
+
+    .container {
+        padding: 0 30px;
+    }
+
+    .nav-menu {
+        display: none;
+    }
+    
+    .card-1 {
+        background-color: var(--colorPurple3);
+        padding: 30px;
+        min-height: 270px;
+        border-radius: 20px;
+        box-shadow: -10px 50px var(--colorBlack);
+        width: 100%;
+        display: block;
+    }
+    
+    .card-2 {
+        background-color: var(--colorYellow);
+        min-height: 320px;
+        padding: 25px 30px;
+        border-radius: 20px;
+        box-shadow: -10px 50px var(--colorBlack);
+        width: 100%;
+        position: static;
+    }
+
+    .faixa {
+        display: flex;
+        justify-content: flex-start; /* Correção aqui */
+        overflow: hidden;
+        background-color: var(--colorPurple1);
+        height: 100px;
+        width: 100%;
+        position: absolute;
+        z-index: 999;
+        top: 1200px;
+        left: 0;
+        align-items: center; /* Centraliza verticalmente */
+    }
+    
+    .black-section {
+        background-color: #1F1F1F; /* Configuração da cor preta */
+        color: #fff;
+        box-sizing: border-box;
+        position: static;
+        height: 1000px; 
+    }
+
+    .icon-star{
+        position: absolute;
+        display: flex; /* Adiciona display flex para alinhar os itens verticalmente */
+        align-items: center; /* Alinha os itens verticalmente no centro */
+        max-width: 50px;
+        max-height: 50px;
+        left: 400px;
+        top: 230px;
+        opacity: 0.09;
+    }
+    
+    .black-section .flecha-baixo-branca{
+        display: none;
+    }
+    
+    .black-section .star-branca{
+        max-width: 35px;
+        max-height: 35px;
+        position: absolute;
+        top: 1430px;
+        left: 10px;
+    }
+    
+    .content-bs{
+        display: flex;
+    }
+    
+    .content-bs h1 {
+        margin: 0 auto;
+        color: #fff;
+        text-align: center;
+        justify-content: center;
+        max-width: 100%;
+        font-size: 35px;
+        margin-top: 70px;
+        margin-bottom: 50px;
+    }
+
+    .part3 {
+        height: 900px;
+        display: static;
+    }
+    
+    .box-green{
+        background-color: var(--colorGreen);
+        height: 450px;
+        margin-top: 100px;
+        border-radius: 20px;
+        padding: 40px 40px;
+        overflow: hidden;
+    }
+    
+    .box-green h1{
+        font-size: 30px;
+        font-weight: 600;
+        max-width: 100%;
+    }
+    
+    .icon-man{
+       display: none;
+    }
+
+    .grid-container{
+        display: grid;
+        grid-template-columns: auto auto auto;
+        margin-top: 30px;
+    }
+    
+    .numbers-users{
+        height: 100px;
+        margin-bottom: 3px;
+    }
+    
+    .numbers-users h1{
+        font-size: 25px;
+        font-weight: 700;
+    }
+
+    .numbers-users p{
+        font-size: 10px;
+    }
+
+    .arrow-nu{
+        max-width: 5px;
+        max-height: 5px;
+        margin-left: 2px;
+    }
+
+    .text-well{
+        width: 100%;
+        margin-top: 45px;
+    }
+    
+    .text-well p{
+        font-size: 12px;
+    }
+    
+    .icon-aster{
+        position: absolute;
+        left: 360px;
+        top: 2600px;
+        opacity: 0.06;
+    }
+
+    .icon-aster img{
+        width: 70px;
+        height: 70px;
+    }
+
+    .pro-grid{
+        display: grid;
+        grid-template-columns: auto;
+        gap: 0;
+        margin-top: 30px;
+        margin-bottom: 100px;
+    }
+    
+    .box-purple{
+        display: none;
+    }
+    
+    .box-blue{
+        background-color: var(--colorBlue);
+        height: 350px;
+        border-radius: 20px;
+        padding: 25px 25px;
+    }
+}
