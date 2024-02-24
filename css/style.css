@@ -491,18 +491,26 @@ header {
         box-sizing: border-box;
         position: static;
         padding-top: 50px;
-        height: 1300px;
+        height: 1200px;
+        align-items: center;
     }
     
     .hero-container {
         position: static;
         flex-direction: column; /* Altera a direção da flexbox para coluna */
-        align-items: center; /* Centraliza os itens verticalmente */
     }
+
+    .button2,
+    .button {
+    padding: 10px 20px;
+    text-decoration: none;
+    font-size: 12px;
+    }
+
 
     .title {
         max-width: 100%; /* Garante que o título não ultrapasse a largura da tela */
-        font-size: 25px; /* Tamanho do título ajustado para telas menores */
+        font-size: 20px; /* Tamanho do título ajustado para telas menores */
         text-align: center; /* Centraliza o texto */
     }
 
@@ -512,6 +520,7 @@ header {
         margin-top: 20px; /* Adiciona margem superior */
         position: static;
         margin-left: 0;
+        font-size: 14px;
     }
 
     .card-1,
@@ -522,8 +531,7 @@ header {
     }
 
     .arrow-up-right-black {
-        position: relative; /* Remove a posição absoluta da seta */
-        margin-left: 0; /* Remove a margem à esquerda */
+       display: none;
     }
 
     .img-hero {
@@ -535,7 +543,7 @@ header {
     }
 
     .container {
-        padding: 0 30px;
+        padding: 0 20px;
     }
 
     .nav-menu {
@@ -543,23 +551,33 @@ header {
     }
     
     .card-1 {
+        margin-left: 10px;
+        margin-right: 10px;
         background-color: var(--colorPurple3);
         padding: 30px;
-        min-height: 270px;
+        height: 290px;
         border-radius: 20px;
-        box-shadow: -10px 50px var(--colorBlack);
+        align-items: center;
+        box-shadow: -10px 30px var(--colorBlack);
         width: 100%;
         display: block;
     }
     
     .card-2 {
+        margin-left: 10px;
+        margin-right: 10px;
         background-color: var(--colorYellow);
-        min-height: 320px;
+        height: 250px;
         padding: 25px 30px;
         border-radius: 20px;
-        box-shadow: -10px 50px var(--colorBlack);
-        width: 100%;
+        box-shadow: -10px 30px var(--colorBlack);
+        width: 100%px;
         position: static;
+    }
+
+    .card-2 img{
+        width: 230px;
+        height: 160px;
     }
 
     .faixa {
@@ -571,7 +589,7 @@ header {
         width: 100%;
         position: absolute;
         z-index: 999;
-        top: 1200px;
+        top: 1100px;
         left: 0;
         align-items: center; /* Centraliza verticalmente */
     }
@@ -581,7 +599,7 @@ header {
         color: #fff;
         box-sizing: border-box;
         position: static;
-        height: 1000px; 
+        height: 900px; 
     }
 
     .icon-star{
@@ -610,6 +628,28 @@ header {
     .content-bs{
         display: flex;
     }
+
+    .box-bs{
+        background-color: #191919b2;
+        width: 100%;
+        height: 130px;
+        padding: 30px 50px;
+        display: flex;
+        align-items: center;
+        justify-content: space-between; /* Adiciona espaço entre os elementos */
+        margin-top: 20px;
+    }
+    
+    .box-bs p{
+        color: #fff;
+        font-size: 14px;
+        font-weight: 600;
+    }
+    
+    .box-bs img{
+        width: 12px;
+        height: 12px;
+    }
     
     .content-bs h1 {
         margin: 0 auto;
@@ -617,7 +657,7 @@ header {
         text-align: center;
         justify-content: center;
         max-width: 100%;
-        font-size: 35px;
+        font-size: 20px;
         margin-top: 70px;
         margin-bottom: 50px;
     }
@@ -629,7 +669,7 @@ header {
     
     .box-green{
         background-color: var(--colorGreen);
-        height: 450px;
+        height: 400px;
         margin-top: 100px;
         border-radius: 20px;
         padding: 40px 40px;
@@ -637,7 +677,7 @@ header {
     }
     
     .box-green h1{
-        font-size: 30px;
+        font-size: 17px;
         font-weight: 600;
         max-width: 100%;
     }
@@ -658,7 +698,7 @@ header {
     }
     
     .numbers-users h1{
-        font-size: 25px;
+        font-size: 20px;
         font-weight: 700;
     }
 
@@ -667,9 +707,7 @@ header {
     }
 
     .arrow-nu{
-        max-width: 5px;
-        max-height: 5px;
-        margin-left: 2px;
+        display: none;
     }
 
     .text-well{
@@ -678,19 +716,11 @@ header {
     }
     
     .text-well p{
-        font-size: 12px;
+        font-size: 10px;
     }
     
     .icon-aster{
-        position: absolute;
-        left: 360px;
-        top: 2600px;
-        opacity: 0.06;
-    }
-
-    .icon-aster img{
-        width: 70px;
-        height: 70px;
+        display: none;
     }
 
     .pro-grid{
